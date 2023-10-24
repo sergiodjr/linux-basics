@@ -26,7 +26,7 @@ sudo nano /etc/hosts
 sudo tail -f /var/log/syslog
 ```
 
-*List available GUI (Graphical User Interface)*
+*List and install available GUI (Graphical User Interface)*
 ```
 tasksel
 ```
