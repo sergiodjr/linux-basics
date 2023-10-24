@@ -1,4 +1,4 @@
-**- System related**
+**- SYSTEM RELATED**
 
 *Reboots the system immediately*
 ```
