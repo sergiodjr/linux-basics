@@ -1,29 +1,27 @@
-- System
+**- System related**
 
-Restart/Reboot the system
+*Reboots the system immediately*
 ```
 sudo reboot
 sudo systemctl reboot
 ```
 
-
+*Shuts down the system immediately*
 ```
-halt
-```
-- Host Files
-```
-/etc/hostname
-/etc/hosts
+sudo halt
 ```
 
-#SYSTEM
-sudo reboot
-sudo systemctl reboot
-halt
+*Edit your hostname*
+```
+sudo nano /etc/hostname
+```
 
-#HOST FILE
-/etc/hostname
-/etc/hosts
+*Edit your known host*
+```
+sudo nano /etc/hosts
+```
+
+
 
 #USER
 id -u
