@@ -21,17 +21,28 @@ sudo nano /etc/hostname
 sudo nano /etc/hosts
 ```
 
+*Syslog live log (stop pressing ctrl+c)* 
+```
+sudo tail -f /var/log/syslog
+```
+
+*List available GUI (Graphical User Interface)*
+```
+tasksel
+```
+
+
+
+
 
 
 #USER
 id -u
 Comand User ID and group id
 
-#SYSLOG 
-sudo tail -f /var/log/syslog
 
-#LIST GUI INTERFACE
-tasksel
+
+
 
 # CREATE FOLDER
 mkdir
