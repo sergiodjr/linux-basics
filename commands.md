@@ -1,4 +1,5 @@
-**- SYSTEM RELATED**
+|System Related|
+|-------------|
 
 *Reboots the system immediately*
 ```
@@ -31,19 +32,20 @@ sudo tail -f /var/log/syslog
 tasksel
 ```
 
-**- PARTITIONS**
+|Partitions|
+|-------------|
 
-*List available disk/partitions showing its name, size and mount point
+*List available disk/partitions showing its name, size and mount point*
 ```
 lsblk
 ```
 
-*List available disk/partitions showing its FSTYPE, and mount point
+*List available disk/partitions showing its FSTYPE, and mount point*
 ```
 sudo lsblk -o NAME,FSTYPE,MOUNTPOINT
 ```
 
-*List all disk/partitions information
+*List all disk/partitions information*
 ```
 sudo fdisk -l
 ```
