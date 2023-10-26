@@ -31,6 +31,23 @@ sudo tail -f /var/log/syslog
 tasksel
 ```
 
+**- PARTITIONS**
+
+*List available disk/partitions showing its name, size and mount point
+```
+lsblk
+```
+
+*List available disk/partitions showing its FSTYPE, and mount point
+```
+sudo lsblk -o NAME,FSTYPE,MOUNTPOINT
+```
+
+*List all disk/partitions information
+```
+sudo fdisk -l
+```
+
 #MOUNT DRIVE
 sudo mount /dev/sda2 <folder to mount>
 mount | grep external_hardrive
@@ -43,10 +60,10 @@ sudo umount -l /media/external
 #MOUNT A EXFAT PARTITION
 sudo mount -t exfat /dev/sda2 /media/external
 
-#LIST PARTITIONS
-sudo fdisk -l
-sudo lsblk -o NAME,FSTYPE,MOUNTPOINT
-lsblk
+
+
+
+
 
 #PARTITIONS USED SPACE
 df -T
