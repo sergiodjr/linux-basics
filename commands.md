@@ -31,41 +31,6 @@ sudo tail -f /var/log/syslog
 tasksel
 ```
 
-
-
-
-
-
-#USER
-id -u
-Comand User ID and group id
-
-
-
-
-
-# CREATE FOLDER
-mkdir
-mkdir -p #command you can create sub-directories of a directory
-$mkdir hello/goodbye
-mkdir:cannot create directory 'hello/goodbye': No such file or directory
-$mkdir -p hello/goodbye
-
-#DELETE FOLDER
-rm -r
-sudo rm -rf /my/locked/directory
-
-#FOLDER CHANGE OWNER AND GROUP
-sudo chown owner:group /path/to/folder
-
-#FOLDER PERMISSION CHANGE AND ITS SUBFILES
-chmod -R 755
-
-#PACKAGE MANAGER
-sudo apt-get install synaptic gnome-software
-dpkg --list
-dpkg --list | grep apache
-
 #MOUNT DRIVE
 sudo mount /dev/sda2 <folder to mount>
 mount | grep external_hardrive
@@ -83,9 +48,17 @@ sudo fdisk -l
 sudo lsblk -o NAME,FSTYPE,MOUNTPOINT
 lsblk
 
-
 #PARTITIONS USED SPACE
 df -T
+
+#PACKAGE MANAGER
+sudo apt-get install synaptic gnome-software
+dpkg --list
+dpkg --list | grep apache
+
+#APT GET
+Update the package list by running the command:
+sudo apt update
 
 #LIST SERVICES
 systemctl list-units --type=service --state=running
@@ -99,17 +72,12 @@ sudo lsof -iTCP -sTCP:LISTEN -n -P
 #SERVICES
 ystemctl list-unit-files --state=enabled
 
-#SSH - https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
-sudo systemctl status ssh
 
-#SSH KEYS
-cd ~
-cd .ssh
-cat authorized_keys
+**- USER**
 
-#SSH KEYS PASS CHANGE
-cd ~/.ssh
-ssh-keygen -p -f <keyfile>
+#USER
+id -u
+Comand User ID and group id
 
 #USER LIST
 getent passwd
@@ -123,9 +91,61 @@ members <groupname>
 getent group <groupname>
 sudo groupdel <groupname>
 
-#APT GET
-Update the package list by running the command:
-sudo apt update
+
+**- FOLDER**
+
+#CREATE FOLDER
+mkdir
+mkdir -p #command you can create sub-directories of a directory
+$mkdir hello/goodbye
+mkdir:cannot create directory 'hello/goodbye': No such file or directory
+$mkdir -p hello/goodbye
+
+#DELETE FOLDER
+rm -r
+sudo rm -rf /my/locked/directory
+
+#FOLDER CHANGE OWNER AND GROUP
+sudo chown owner:group /path/to/folder
+
+#FOLDER PERMISSION CHANGE AND ITS SUBFILES
+chmod -R 755
+
+
+
+
+
+
+
+
+**- SSH**
+
+#SSH - https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
+sudo systemctl status ssh
+
+#SSH KEYS
+cd ~
+cd .ssh
+cat authorized_keys
+
+#SSH KEYS PASS CHANGE
+cd ~/.ssh
+ssh-keygen -p -f <keyfile>
+
+#SSH keys
+cd ~/.ssh
+ls
+cat <file name>
+
+#SSH create a ssh key pair
+ssh-keygen -t rsa
+
+#SSH a key from server
+ssh-copy-id zima@192.168.5.200
+
+
+
+
 
 Upgrade the installed packages by running the command:
 sudo apt upgrade
@@ -140,16 +160,13 @@ sudo nordvpn restart
 nordvpn status
 nordvpn connect Brazil
 
-#SSH keys
-cd ~/.ssh
-ls
-cat <file name>
 
-#SSH create a ssh key pair
-ssh-keygen -t rsa
 
-#SSH a key from server
-ssh-copy-id zima@192.168.5.200
+
+
+
+
+
 
 #APPLE - MACBOOK
 Flush DNS
