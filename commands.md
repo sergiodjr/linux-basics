@@ -1,4 +1,4 @@
-|System Related|
+|<< System Related >>|
 |-------------|
 
 *Reboots the system immediately*
@@ -32,7 +32,7 @@ sudo tail -f /var/log/syslog
 tasksel
 ```
 
-|Partitions|
+|<< Partitions >>|
 |-------------|
 
 *List available disk/partitions showing its name, size and mount point*
