@@ -105,7 +105,10 @@ getent passwd | awk -F: '$3 >= 1000 && $3 < 65534 {print $1}'
 
 #GROUPS
 cat /etc/group
+
+*List and install available GUI (Graphical User Interface)*
 usermod -a -G <groupaname> <user>
+
 members <groupname>
 getent group <groupname>
 sudo groupdel <groupname>
