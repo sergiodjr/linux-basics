@@ -50,8 +50,10 @@ sudo lsblk -o NAME,FSTYPE,MOUNTPOINT
 sudo fdisk -l
 ```
 
-#MOUNT DRIVE
-sudo mount /dev/sda2 <folder to mount>
+*Mount a drive on a desire folder*
+```
+sudo mount /dev/sda2 /you/choose/thefolder
+```
 mount | grep external_hardrive
 sudo nano /etc/fstab
 
