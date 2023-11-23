@@ -32,6 +32,7 @@ sudo tail -f /var/log/syslog
 tasksel
 ```
 
+
 |<< Partitions >>|
 |-------------|
 
