@@ -12,12 +12,12 @@ sudo systemctl reboot
 sudo halt
 ```
 
-*Edit your hostname*
+*Edit hostname*
 ```
 sudo nano /etc/hostname
 ```
 
-*Edit your known host*
+*Edit known host*
 ```
 sudo nano /etc/hosts
 ```
