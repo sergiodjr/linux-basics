@@ -31,7 +31,8 @@ sudo tail -f /var/log/syslog
 ```
 tasksel
 ```
--
+###
+---
 
 |<< Partitions >>|
 |-------------|
@@ -78,14 +79,34 @@ df -T
 
 |<< Package Managment >>|
 |-------------|
-#PACKAGE MANAGER
-sudo apt-get install synaptic gnome-software
-dpkg --list
-dpkg --list | grep apache
 
-#APT GET
-Update the package list by running the command:
-sudo apt update
+*Update the repositories/packages*
+```
+sudo apt-get update
+```
+
+*Apply the updates*
+```
+sudo apt-get upgrade
+```
+
+*list all installed packages along with their status and other information*
+```
+dpkg --list
+```
+
+*Keep in mind that the output may be quite extensive, depending on the number of installed packages on your system.* 
+*If you want to search for a specific package, you can pipe the output to grep*
+```
+dpkg --list | grep packagename
+```
+
+
+
+*Installs Synaptic Package Manager, friendly interface for package management*
+```
+sudo apt-get install synaptic 
+```
 
 #LIST SERVICES
 systemctl list-units --type=service --state=running
