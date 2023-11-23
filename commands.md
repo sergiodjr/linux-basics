@@ -31,8 +31,9 @@ sudo tail -f /var/log/syslog
 ```
 tasksel
 ```
-###
----
+
+<br>
+<br>
 
 |<< Partitions >>|
 |-------------|
@@ -77,6 +78,9 @@ sudo mount -t exfat /dev/sda2 /you/pick/thefolder
 df -T
 ```
 
+<br>
+<br>
+
 |<< Package Managment >>|
 |-------------|
 
@@ -90,7 +94,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-*list all installed packages along with their status and other information*
+*List all installed packages along with their status and other information*
 ```
 dpkg --list
 ```
