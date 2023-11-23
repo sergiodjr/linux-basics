@@ -52,7 +52,7 @@ sudo fdisk -l
 
 *Mount a drive on a desire folder*
 ```
-sudo mount /dev/sda2 /you/choose/thefolder
+sudo mount /dev/sda2 /you/pick/thefolder
 ```
 mount | grep external_hardrive
 sudo nano /etc/fstab
