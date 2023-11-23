@@ -52,26 +52,31 @@ sudo fdisk -l
 
 *Mount a drive on a desire folder*
 ```
-sudo mount /dev/sda2 /you/pick/thefolder
+sudo mount /dev/YouPickTheDrive /you/pick/thefolder
 ```
-mount | grep external_hardrive
-sudo nano /etc/fstab
 
-#UMOUNT
-sudo umount /dev/sda2
-sudo umount -l /media/external
+*Unmount the device on /dev/sda2*
+```
+sudo umount /dev/YouPickTheDrive /you/pick/thefolder
+```
 
-#MOUNT A EXFAT PARTITION
-sudo mount -t exfat /dev/sda2 /media/external
+*Force unmount the device on /dev/sda2*
+```
+sudo umount -l /dev/YouPickTheDrive
+```
 
+*Mount exFat partition*
+```
+sudo mount -t exfat /dev/sda2 /you/pick/thefolder
+```
 
-
-
-
-
-#PARTITIONS USED SPACE
+*Shows devices, filesystem, type, used and available space, also the mount location*
+```
 df -T
+```
 
+|<< Package Managment >>|
+|-------------|
 #PACKAGE MANAGER
 sudo apt-get install synaptic gnome-software
 dpkg --list
