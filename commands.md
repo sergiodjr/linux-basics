@@ -125,7 +125,8 @@ sudo lsof -iTCP -sTCP:LISTEN -n -P
 ystemctl list-unit-files --state=enabled
 
 
-**- USER**
+|<< Users >>|
+|-------------|
 
 #USER
 id -u
@@ -147,7 +148,8 @@ getent group <groupname>
 sudo groupdel <groupname>
 
 
-**- FOLDER**
+|<< Folder >>|
+|-------------|
 
 #CREATE FOLDER
 mkdir
@@ -168,12 +170,8 @@ chmod -R 755
 
 
 
-
-
-
-
-
-**- SSH**
+|<< SSH >>|
+|-------------|
 
 #SSH - https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
 sudo systemctl status ssh
@@ -199,11 +197,6 @@ ssh-keygen -t rsa
 ssh-copy-id zima@192.168.5.200
 
 
-
-
-
-Upgrade the installed packages by running the command:
-sudo apt upgrade
 
 #DOCKER
 sudo docker compose up -d
