@@ -32,6 +32,37 @@ sudo tail -f /var/log/syslog
 tasksel
 ```
 
+*List all running services*
+```
+systemctl list-units --type=service --state=running
+```
+
+*List files with enabled status*
+```
+systemctl list-unit-files --state=enabled
+```
+
+*Show service status*
+```
+systemctl status service-name
+```
+
+*Start service*
+```
+sudo systemctl start service-name
+```
+
+*Stop service*
+```
+sudo systemctl stop service-name
+```
+
+*List all open TCP ports*
+```
+sudo lsof -iTCP -sTCP:LISTEN -n -P
+```
+
+
 <br>
 <br>
 
@@ -112,17 +143,9 @@ dpkg --list | grep packagename
 sudo apt-get install synaptic 
 ```
 
-#LIST SERVICES
-systemctl list-units --type=service --state=running
-systemctl status service-name
-sudo systemctl stop service-name
-sudo systemctl start service-name
 
-#PORT LISTEN
-sudo lsof -iTCP -sTCP:LISTEN -n -P
 
-#SERVICES
-ystemctl list-unit-files --state=enabled
+
 
 
 |<< Users >>|
