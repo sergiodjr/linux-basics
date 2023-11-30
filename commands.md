@@ -174,12 +174,12 @@ members groupname
 
 *Query information about a specific group*
 ```
-getent group <groupname>
+getent group groupname
 ```
 
 *Delete a group*
 ```
-sudo groupdel <groupname>
+sudo groupdel groupname
 ```
 
 <br>
