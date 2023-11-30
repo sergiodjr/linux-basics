@@ -1,4 +1,4 @@
-|<< System Related >>|
+|<< SYSTEM >>|
 |-------------|
 
 *Reboots the system immediately*
@@ -62,11 +62,10 @@ sudo systemctl stop service-name
 sudo lsof -iTCP -sTCP:LISTEN -n -P
 ```
 
-
 <br>
 <br>
 
-|<< Partitions >>|
+|<< PARTITIONS >>|
 |-------------|
 
 *List available disk/partitions showing its name, size and mount point*
@@ -112,7 +111,7 @@ df -T
 <br>
 <br>
 
-|<< Package Managment >>|
+|<< PACKAGE MANAGMENT >>|
 |-------------|
 
 *Update the repositories/packages*
@@ -136,62 +135,96 @@ dpkg --list
 dpkg --list | grep packagename
 ```
 
-
-
 *Installs Synaptic Package Manager, friendly interface for package management*
 ```
 sudo apt-get install synaptic 
 ```
 
+<br>
+<br>
 
-
-
-
-
-|<< Users >>|
+|<< USERS & GROUPS >>|
 |-------------|
 
-#USER
+*Show user account ID*
+```
 id -u
-Comand User ID and group id
-
-#USER LIST
-getent passwd
 cat /etc/passwd
+```
+
+*List all users that have password set*
+```
 getent passwd | awk -F: '$3 >= 1000 && $3 < 65534 {print $1}'
+```
 
-#GROUPS
+*List all groups*
+```
 cat /etc/group
+```
 
-*List and install available GUI (Graphical User Interface)*
-usermod -a -G <groupaname> <user>
+*Add a user to a group*
+```
+usermod -a -G groupaname user
+```
 
-members <groupname>
+*Show groups members*
+```
+members groupname
+```
+
+*Query information about a specific group*
+```
 getent group <groupname>
+```
+
+*Delete a group*
+```
 sudo groupdel <groupname>
+```
 
+<br>
+<be>
 
-|<< Folder >>|
+|<< FOLDER >>|
 |-------------|
 
-#CREATE FOLDER
-mkdir
-mkdir -p #command you can create sub-directories of a directory
-$mkdir hello/goodbye
-mkdir:cannot create directory 'hello/goodbye': No such file or directory
-$mkdir -p hello/goodbye
+*Create a folder*
+```
+mkdir foldername
+```
 
-#DELETE FOLDER
-rm -r
-sudo rm -rf /my/locked/directory
+*You can create sub-directories of a director*
+```
+mkdir -p foldername/subdirectory
+```
 
-#FOLDER CHANGE OWNER AND GROUP
-sudo chown owner:group /path/to/folder
+*Remove a directory and its contents*
+```
+rm -r foldername
+```
 
-#FOLDER PERMISSION CHANGE AND ITS SUBFILES
-chmod -R 755
+*Remove a directory prompting for confirmation*
+```
+rm -ri foldername
+```
 
+*Force removal without confirmation*
+```
+rm -rf foldername
+```
 
+*Change owner and group*
+```
+sudo chown owner:groupname /path/to/folder
+```
+
+*Change folder permission*
+```
+chmod -R 755 /path/to/folder
+```
+
+<br>
+<br>
 
 |<< SSH >>|
 |-------------|
