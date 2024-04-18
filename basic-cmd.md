@@ -151,6 +151,11 @@ sudo apt-get install synaptic
 |<< USERS & GROUPS >>|
 |-------------|
 
+*Login with root*
+```
+su -
+```
+
 *Show user account ID*
 ```
 id -u
