@@ -1,6 +1,11 @@
 |<< SYSTEM >>|
 |-------------|
 
+*Check the Debian version*
+```
+lsb_release -a
+```
+
 *Reboots the system immediately*
 ```
 sudo reboot
