@@ -187,6 +187,11 @@ members groupname
 getent group groupname
 ```
 
+*Delete an user*
+```
+userdel -r username
+```
+
 *Delete a group*
 ```
 sudo groupdel groupname
