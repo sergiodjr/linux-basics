@@ -245,39 +245,65 @@ chmod -R 755 /path/to/folder
 |-------------|
 
 #SSH - https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
-sudo systemctl status ssh
 
-#SSH KEYS
+*Show SSH service status*
+```
+sudo systemctl status ssh
+```
+
+*Show your SSH keys*
+```
 cd ~
 cd .ssh
 cat authorized_keys
+```
 
-#SSH KEYS PASS CHANGE
+*Change SSH key passcode*
+```
 cd ~/.ssh
 ssh-keygen -p -f <keyfile>
+```
 
-#SSH keys
+*Show SSH key encrypted information (not readable)*
+```
 cd ~/.ssh
 ls
 cat <file name>
+```
 
-#SSH create a ssh key pair
+*Create a SSH pair key*
+```
 ssh-keygen -t rsa
+```
 
-#SSH a key from server
-ssh-copy-id zima@192.168.5.200
+*SSH pair key with server*
+```
+ssh-copy-id zima@ <ip>
+```
 
+<br>
+<br>
 
+|<< Docker >>|
+|-------------|
 
-#DOCKER
+*Execute the .yml under the local folder*
+```
 sudo docker compose up -d
-docker network create #NomeDaNetwork#
-docker network ls
+```
 
-#NORD VPN
-sudo nordvpn restart
-nordvpn status
-nordvpn connect Brazil
+*List all Networks*
+```
+docker network ls
+```
+
+*Create a Network*
+```
+docker network create #NomeDaNetwork#
+```
+
+
+
 
 
 
