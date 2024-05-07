@@ -284,7 +284,7 @@ ssh-copy-id zima@ <ip>
 <br>
 <br>
 
-|<< Docker >>|
+|<< DOCKER >>|
 |-------------|
 
 *Execute the .yml under the local folder*
@@ -299,66 +299,36 @@ docker network ls
 
 *Create a Network*
 ```
-docker network create #NomeDaNetwork#
+docker network create <Network-Name>
 ```
 
+<br>
+<br>
 
+|<< SAMBA >>|
+|-------------|
 
-
-
-
-
-
-
-
-
-
-#APPLE - MACBOOK
-Flush DNS
-sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
-
+*Samba configuration path*
+```
 /etc/samba/smb.conf
+```
 
-#SAMBA - 
-sudo systemctl restart smbd
-sudo service smbd stop
-/etc/samba/smb.conf
+*Show Samba status and configuration*
+```
 sudo testparm
+```
 
-#SAMBA USER PASSWD CHANGE
+*Restart Samba service*
+```
+sudo systemctl restart smbd
+```
+
+*Stop Samba service*
+```
+sudo service smbd stop
+```
+
+*Change a samba user password*
+```
 sudo smbpasswd -a your_user
-
-[zima-share]
-comment = Private Folder
-path = /home/zima/Desktop/public_share
-browseable = yes
-guest ok = no
-read only = no
-create mask = 0700
-directory mask = 0700
-valid users = sambauser
-writable = yes   
-
-[zima-HDD]
-comment = Private Folder
-path = /media/external
-browseable = yes
-guest ok = no
-read only = no
-create mask = 0700
-directory mask = 0700
-valid users = sambauser
-writable = yes
-
-[rasp-share]
-path = /home/berry/Desktop/share
-browseable = yes
-writeable = yes
-only guest = no
-create mask = 0777
-directory mask = 0777
-public = yes
-force user = root
-
-[RASPBERRY]
-sudo raspi-config
+```
