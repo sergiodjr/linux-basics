@@ -200,7 +200,7 @@ sudo groupdel groupname
 <br>
 <be>
 
-|<< FOLDER >>|
+|<< FOLDER and FILES >>|
 |-------------|
 
 *Create a folder*
@@ -278,7 +278,7 @@ ssh-keygen -t rsa
 
 *SSH pair key with server*
 ```
-ssh-copy-id zima@ <ip>
+ssh-copy-id yourUsername@ <ip>
 ```
 
 <br>
@@ -330,5 +330,5 @@ sudo service smbd stop
 
 *Change a samba user password*
 ```
-sudo smbpasswd -a your_user
+sudo smbpasswd -a yourUsername
 ```
