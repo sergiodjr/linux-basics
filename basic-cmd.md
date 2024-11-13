@@ -70,7 +70,7 @@ sudo lsof -iTCP -sTCP:LISTEN -n -P
 <br>
 <br>
 
-|<< PARTITIONS >>|
+|<< PARTITIONS and DISK >>|
 |-------------|
 
 *List available disk/partitions showing its name, size and mount point*
@@ -113,6 +113,11 @@ sudo mount -t exfat /dev/sda2 /you/pick/thefolder
 df -T
 ```
 
+*Create file system ext4 on /dev/sdb2*
+```
+sudo mkfs.ext4 /dev/sdb2
+```
+
 <br>
 <br>
 
@@ -148,7 +153,7 @@ sudo apt-get install synaptic
 <br>
 <br>
 
-|<< USERS & GROUPS >>|
+|<< USERS and GROUPS >>|
 |-------------|
 
 *Login with root*
