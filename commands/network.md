@@ -1,3 +1,31 @@
+sigma@defiant:~$ ip route | grep default
+default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
+sigma@defiant:~$ sudo ip route replace default via 192.168.5.111 dev enp2s0
+sigma@defiant:~$ ip route | grep default
+default via 192.168.5.111 dev enp2s0 
+default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
+sigma@defiant:~$ ip route | grep default
+default via 192.168.5.111 dev enp2s0 
+default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
+sigma@defiant:~$ ip route | grep default
+default via 192.168.5.111 dev enp2s0 
+default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
+sigma@defiant:~$ sudo systemctl restart networking
+sigma@defiant:~$ ip route | grep default
+default via 192.168.5.111 dev enp2s0 
+default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
+sigma@defiant:~$ sudo ip route del default via 192.168.5.101
+sigma@defiant:~$ ip route | grep default
+default via 192.168.5.111 dev enp2s0 
+sigma@defiant:~$ sudo ip route del default via 192.168.5.101
+RTNETLINK answers: No such process
+sigma@defiant:~$ sudo systemctl restart networking
+sigma@defiant:~$ ip route | grep default
+default via 192.168.5.111 dev enp2s0 
+sigma@defiant:~$ 
+
+
+
 |<< SYSTEM >>|
 |-------------|
 
