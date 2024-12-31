@@ -1,28 +1,43 @@
-sigma@defiant:~$ ip route | grep default
-default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
-sigma@defiant:~$ sudo ip route replace default via 192.168.5.111 dev enp2s0
-sigma@defiant:~$ ip route | grep default
-default via 192.168.5.111 dev enp2s0 
-default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
-sigma@defiant:~$ ip route | grep default
-default via 192.168.5.111 dev enp2s0 
-default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
-sigma@defiant:~$ ip route | grep default
-default via 192.168.5.111 dev enp2s0 
-default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
-sigma@defiant:~$ sudo systemctl restart networking
-sigma@defiant:~$ ip route | grep default
-default via 192.168.5.111 dev enp2s0 
-default via 192.168.5.101 dev enp2s0 proto dhcp src 192.168.5.200 metric 100 
-sigma@defiant:~$ sudo ip route del default via 192.168.5.101
-sigma@defiant:~$ ip route | grep default
-default via 192.168.5.111 dev enp2s0 
-sigma@defiant:~$ sudo ip route del default via 192.168.5.101
-RTNETLINK answers: No such process
-sigma@defiant:~$ sudo systemctl restart networking
-sigma@defiant:~$ ip route | grep default
-default via 192.168.5.111 dev enp2s0 
-sigma@defiant:~$ 
+NETWORK
+
+*Default gateway*
+```
+ip route | grep default
+```
+
+*Replace default route temporary - It will reset after restart/shutdown*
+```
+sudo ip route replace default via <IP> dev <NETWORK INTERFACE>
+```
+
+*Delete default route*
+```
+sudo ip route del default via <IP>
+```
+
+*Permanent network settings*
+```
+sudo nano /etc/network/interfaces
+```
+
+```
+auto <NETWORK INTERFACE>
+iface <NETWORK INTERFACE> inet static
+    address <IP>
+    netmask <IP>
+    gateway <IP>
+```
+
+*Restart networks adapters and settings*
+```
+sudo systemctl restart networking
+```
+
+
+
+
+
+
 
 
 
