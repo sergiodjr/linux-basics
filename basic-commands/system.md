@@ -5,33 +5,33 @@
 ```
 lsb_release -a
 ```
-
+<br>
 *Reboots the system immediately*
 ```
 sudo reboot
 sudo systemctl reboot
 ```
-
+<br>
 *Shuts down the system immediately*
 ```
 sudo halt
 ```
-
+<br>
 *Edit hostname*
 ```
 sudo nano /etc/hostname
 ```
-
+<br>
 *Edit known host*
 ```
 sudo nano /etc/hosts
 ```
-
+<br>
 *Syslog live log (stop pressing ctrl+c)* 
 ```
 sudo tail -f /var/log/syslog
 ```
-
+<br>
 *List and install available GUI (Graphical User Interface)*
 ```
 tasksel
