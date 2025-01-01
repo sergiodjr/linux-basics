@@ -1,4 +1,4 @@
-|<< PARTITIONS and DISK >>|
+|<< DISK and PARTITIONS >>|
 |-------------|
 <br>
 
