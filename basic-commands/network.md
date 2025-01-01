@@ -6,6 +6,11 @@
 cat /etc/network/interfaces
 ```
 
+*Identify the Network Interface:*
+```
+ip a
+```
+
 *Verifying the Interface Status*
 ```
 ip addr show <INTERFACE_NAME>
