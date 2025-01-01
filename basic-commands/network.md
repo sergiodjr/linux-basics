@@ -30,9 +30,25 @@ sudo ip link set <INTERFACE_NAME> up
 dmesg | grep  <INTERFACE_NAME>
 ```
 
-<br>
-<br>
+*Interface setting sample*
+```
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
 
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto enp2s0
+iface enp2s0 inet static
+ address 192.168.5.200
+ netmask 255.255.255.0
+ gateway 192.168.5.111
+```
+<br>
+<br>
 
 |<< GATEWAY >>|
 |-------------|
