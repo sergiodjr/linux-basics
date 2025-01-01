@@ -43,31 +43,37 @@ sudo tail -f /var/log/syslog
 ```
 tasksel
 ```
+<br>
 
 *List all running services*
 ```
 systemctl list-units --type=service --state=running
 ```
+<br>
 
 *List files with enabled status*
 ```
 systemctl list-unit-files --state=enabled
 ```
+<br>
 
 *Show service status*
 ```
 systemctl status service-name
 ```
+<br>
 
 *Start service*
 ```
 sudo systemctl start service-name
 ```
+<br>
 
 *Stop service*
 ```
 sudo systemctl stop service-name
 ```
+<br>
 
 *List all open TCP ports*
 ```
@@ -79,78 +85,91 @@ sudo lsof -iTCP -sTCP:LISTEN -n -P
 
 |<< PARTITIONS and DISK >>|
 |-------------|
+<br>
 
 *List available disk/partitions showing its name, size and mount point*
 ```
 lsblk
 ```
+<br>
 
 *List available disk/partitions showing its FSTYPE, and mount point*
 ```
 sudo lsblk -o NAME,FSTYPE,MOUNTPOINT
 ```
+<br>
 
 *List all disk/partitions information*
 ```
 sudo fdisk -l
 ```
+<br>
 
 *Mount a drive on a desire folder*
 ```
 sudo mount /dev/YouPickTheDrive /you/pick/thefolder
 ```
+<br>
 
 *Unmount the device on /dev/sda2*
 ```
 sudo umount /dev/YouPickTheDrive /you/pick/thefolder
 ```
+<br>
 
 *Force unmount the device on /dev/sda2*
 ```
 sudo umount -l /dev/YouPickTheDrive
 ```
+<br>
 
 *Mount exFat partition*
 ```
 sudo mount -t exfat /dev/sda2 /you/pick/thefolder
 ```
+<br>
 
 *Shows devices, filesystem, type, used and available space, also the mount location*
 ```
 df -T
 ```
+<br>
 
 *Create file system ext4 on /dev/sdb2*
 ```
 sudo mkfs.ext4 /dev/sdb2
 ```
-
 <br>
 <br>
 
 |<< PACKAGE MANAGMENT >>|
 |-------------|
+<br>
 
 *Update the repositories/packages*
 ```
 sudo apt-get update
 ```
+<br>
 
 *Apply the updates*
 ```
 sudo apt-get upgrade
 ```
+<br>
 
 *List all installed packages along with their status and other information*
 ```
 dpkg --list
 ```
+<br>
 
 *Keep in mind that the output may be quite extensive, depending on the number of installed packages on your system.* 
 *If you want to search for a specific package, you can pipe the output to grep*
 ```
 dpkg --list | grep packagename
 ```
+<br>
 
 *Installs Synaptic Package Manager, friendly interface for package management*
 ```
@@ -162,47 +181,56 @@ sudo apt-get install synaptic
 
 |<< USERS and GROUPS >>|
 |-------------|
+<br>
 
 *Login with root*
 ```
 su -
 ```
+<br>
 
 *Show user account ID*
 ```
 id -u
 cat /etc/passwd
 ```
+<br>
 
 *List all users that have password set*
 ```
 getent passwd | awk -F: '$3 >= 1000 && $3 < 65534 {print $1}'
 ```
+<br>
 
 *List all groups*
 ```
 cat /etc/group
 ```
+<br>
 
 *Add a user to a group*
 ```
 usermod -a -G groupaname user
 ```
+<br>
 
 *Show groups members*
 ```
 members groupname
 ```
+<br>
 
 *Query information about a specific group*
 ```
 getent group groupname
 ```
+<br>
 
 *Delete an user*
 ```
 userdel -r username
 ```
+<br>
 
 *Delete a group*
 ```
@@ -214,36 +242,43 @@ sudo groupdel groupname
 
 |<< FOLDER and FILES >>|
 |-------------|
+<br>
 
 *Create a folder*
 ```
 mkdir foldername
 ```
+<br>
 
 *You can create sub-directories of a director*
 ```
 mkdir -p foldername/subdirectory
 ```
+<br>
 
 *Remove a directory and its contents*
 ```
 rm -r foldername
 ```
+<br>
 
 *Remove a directory prompting for confirmation*
 ```
 rm -ri foldername
 ```
+<br>
 
 *Force removal without confirmation*
 ```
 rm -rf foldername
 ```
+<br>
 
 *Change owner and group*
 ```
 sudo chown owner:groupname /path/to/folder
 ```
+<br>
 
 *Change folder permission*
 ```
@@ -255,6 +290,7 @@ chmod -R 755 /path/to/folder
 
 |<< SSH >>|
 |-------------|
+<br>
 
 #SSH - https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
 
@@ -262,6 +298,7 @@ chmod -R 755 /path/to/folder
 ```
 sudo systemctl status ssh
 ```
+<br>
 
 *Show your SSH keys*
 ```
@@ -269,12 +306,14 @@ cd ~
 cd .ssh
 cat authorized_keys
 ```
+<br>
 
 *Change SSH key passcode*
 ```
 cd ~/.ssh
 ssh-keygen -p -f <keyfile>
 ```
+<br>
 
 *Show SSH key encrypted information (not readable)*
 ```
@@ -282,11 +321,13 @@ cd ~/.ssh
 ls
 cat <file name>
 ```
+<br>
 
 *Create a SSH pair key*
 ```
 ssh-keygen -t rsa
 ```
+<br>
 
 *SSH pair key with server*
 ```
@@ -298,16 +339,19 @@ ssh-copy-id yourUsername@ <ip>
 
 |<< DOCKER >>|
 |-------------|
+<br>
 
 *Execute the .yml under the local folder*
 ```
 sudo docker compose up -d
 ```
+<br>
 
 *List all Networks*
 ```
 docker network ls
 ```
+<br>
 
 *Create a Network*
 ```
@@ -319,28 +363,34 @@ docker network create <Network-Name>
 
 |<< SAMBA >>|
 |-------------|
+<br>
 
 *Samba configuration path*
 ```
 /etc/samba/smb.conf
 ```
+<br>
 
 *Show Samba status and configuration*
 ```
 sudo testparm
 ```
+<br>
 
 *Restart Samba service*
 ```
 sudo systemctl restart smbd
 ```
+<br>
 
 *Stop Samba service*
 ```
 sudo service smbd stop
 ```
+<br>
 
 *Change a samba user password*
 ```
 sudo smbpasswd -a yourUsername
 ```
+<br>
