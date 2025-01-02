@@ -14,6 +14,12 @@ lsblk -f
 ```
 <br>
 
+*This shows disk space usage along with mounted filesystems:*
+```
+df -h
+```
+<br>
+
 *Use the e2label command to rename the external hard drive - Umount it FIRST*
 ```
 sudo e2label /dev/<DISK> <MY-DRIVE>
