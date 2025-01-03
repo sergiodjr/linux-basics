@@ -15,6 +15,12 @@ cat /etc/passwd
 ```
 <br>
 
+*To find the PGID (Primary Group ID)*
+```
+id -g <username>
+```
+<br>
+
 *List all users that have password set*
 ```
 getent passwd | awk -F: '$3 >= 1000 && $3 < 65534 {print $1}'
