@@ -1,5 +1,5 @@
 Mount the HDDs on the Proxmox Host
-Identify the devices using lsblk or fdisk -l to confirm their device names (e.g., /dev/sdb1, /dev/sdc1).
+Identify the devices using ```lsblk``` to confirm their device names ```/dev/sdb1, /dev/sdc1```
 
 Create mount points on the Proxmox host, such as
 ```
