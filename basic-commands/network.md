@@ -18,7 +18,7 @@ ip addr show <INTERFACE_NAME>
 
 *Set interface status DOWN/UP*
 ```
-sudo ip link set <interface_name> down
+sudo ip link set <INTERFACE_NAME> down
 ```
 
 ```
