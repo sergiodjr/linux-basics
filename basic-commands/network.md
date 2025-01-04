@@ -33,7 +33,7 @@ dmesg | grep  <INTERFACE_NAME>
 *Interface setting sample*
 ```
 # This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
+# and how to activate them.
 
 source /etc/network/interfaces.d/*
 
