@@ -79,6 +79,4 @@ sudo systemctl stop service-name
 ```
 sudo lsof -iTCP -sTCP:LISTEN -n -P
 ```
-
-<br>
 <br>
