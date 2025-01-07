@@ -1,10 +1,9 @@
 |<< SAMBA >>|
 |-------------|
 
-#The folder that will be shared on SAMBA must have permission 0777 set.
+The folder that will be shared on SAMBA must have permission 0777 set.
 <br>
-
-
+<br>
 
 *Edit Samba configuration*
 ```
