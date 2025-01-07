@@ -4,7 +4,7 @@
 
 *Login with root*
 ```
-su -
+su
 ```
 <br>
 
