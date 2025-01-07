@@ -42,6 +42,4 @@ sudo chown owner:groupname /path/to/folder
 ```
 chmod -R 755 /path/to/folder
 ```
-
-<br>
 <br>
