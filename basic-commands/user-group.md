@@ -34,7 +34,7 @@ userdel -r <USERNAME>
 
 *Assign Additional Groups*
 ```
-sudo usermod -aG sudo <USERNAME>
+sudo usermod -aG <GROUPNAME> <USERNAME>
 ```
 <br>
 
