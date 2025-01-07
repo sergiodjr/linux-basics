@@ -5,6 +5,18 @@ The folder that will be shared on SAMBA must have permission 0777 set.
 <br>
 <br>
 
+*Install Samba*
+```
+sudo apt install samba -y
+```
+<br>
+
+*Verify the installation*
+```
+samba --version
+```
+<br>
+
 *Edit Samba configuration*
 ```
 sudo nano /etc/samba/smb.conf
