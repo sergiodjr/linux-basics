@@ -8,6 +8,43 @@ su -
 ```
 <br>
 
+*Add the User*
+```
+sudo adduser <USERNAME>
+```
+<br>
+
+*Verify the User*
+```
+getent passwd <USERNAME>
+```
+<br>
+
+*Change user password*
+```
+sudo passwd <USERNAME>
+```
+<br>
+
+*Delete a user*
+```
+userdel -r <USERNAME>
+```
+<br>
+
+*Assign Additional Groups*
+```
+sudo usermod -aG sudo <USERNAME>
+
+```
+<br>
+
+*To view a list of all groups a user belongs t*
+```
+groups <USERNAME>
+```
+<br>
+
 *Show user account ID*
 ```
 id -u
@@ -17,7 +54,7 @@ cat /etc/passwd
 
 *To find the PGID (Primary Group ID)*
 ```
-id -g <username>
+id -g <USERNAME>
 ```
 <br>
 
@@ -33,34 +70,25 @@ cat /etc/group
 ```
 <br>
 
-*Add a user to a group*
-```
-usermod -a -G groupaname user
-```
-<br>
-
-*Show groups members*
-```
-members groupname
-```
-<br>
-
-*Query information about a specific group*
-```
-getent group groupname
-```
-<br>
-
-*Delete an user*
-```
-userdel -r username
-```
-<br>
-
 *Delete a group*
 ```
 sudo groupdel groupname
 ```
 
+*Add a user to a group*
+```
+usermod -a -G <GROUPNAME> <USERNAME>
+```
 <br>
+
+*Show groups members*
+```
+members <GROUPNAME>
+```
+<br>
+
+*Query information about a specific group*
+```
+getent group <GROUPNAME>
+```
 <br>
