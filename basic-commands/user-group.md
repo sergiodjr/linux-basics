@@ -32,12 +32,6 @@ userdel -r <USERNAME>
 ```
 <br>
 
-*Assign Additional Groups*
-```
-sudo usermod -aG <GROUPNAME> <USERNAME>
-```
-<br>
-
 *To view a list of all groups a user belongs t*
 ```
 groups <USERNAME>
