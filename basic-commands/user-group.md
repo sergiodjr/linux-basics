@@ -71,7 +71,7 @@ cat /etc/group
 
 *Delete a group*
 ```
-sudo groupdel groupname
+sudo groupdel <GROUPNAME>
 ```
 <br>
 
