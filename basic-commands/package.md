@@ -31,6 +31,4 @@ dpkg --list | grep packagename
 ```
 sudo apt-get install synaptic 
 ```
-
-<br>
 <br>
