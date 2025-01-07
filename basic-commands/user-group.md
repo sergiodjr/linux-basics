@@ -35,7 +35,6 @@ userdel -r <USERNAME>
 *Assign Additional Groups*
 ```
 sudo usermod -aG sudo <USERNAME>
-
 ```
 <br>
 
@@ -74,6 +73,7 @@ cat /etc/group
 ```
 sudo groupdel groupname
 ```
+<br>
 
 *Add a user to a group*
 ```
