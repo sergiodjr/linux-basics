@@ -73,4 +73,3 @@ df -T
 sudo mkfs.ext4 /dev/sdb2
 ```
 <br>
-<br>
