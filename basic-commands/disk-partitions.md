@@ -52,7 +52,7 @@ sudo umount /dev/YouPickTheDrive /you/pick/thefolder
 
 *Force unmount the device on /dev/sda2*
 ```
-sudo umount -l /dev/YouPickTheDrive
+sudo umount -f /dev/YouPickTheDrive
 ```
 <br>
 
