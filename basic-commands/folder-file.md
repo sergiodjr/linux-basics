@@ -32,9 +32,21 @@ rm -rf foldername
 ```
 <br>
 
-*Change owner and group*
+*Change both the owner and group of a folder or file*
 ```
 sudo chown owner:groupname /path/to/folder
+```
+<br>
+
+*Change the owner of a file to a specific user*
+```
+chown <USERNAME> <FILENAME>
+```
+<br>
+
+*Recursively change ownership for all files and directories within a directory*
+```
+chown -R username:groupname directoryname
 ```
 <br>
 
