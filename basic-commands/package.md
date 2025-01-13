@@ -14,6 +14,12 @@ sudo apt-get upgrade
 ```
 <br>
 
+*After upgrading, you can clean up obsolete packages and free up disk space*
+```
+sudo apt autoremove
+```
+<br>
+
 *List all installed packages along with their status and other information*
 ```
 dpkg --list
