@@ -55,6 +55,12 @@ sudo smbpasswd -a <USERNAME>
 ```
 <br>
 
+*Delete Samba account*
+```
+sudo smbpasswd -x <USERNAME>
+```
+<br>
+
 *Verify Samba Users*
 ```
 sudo pdbedit -L
