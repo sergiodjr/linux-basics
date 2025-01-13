@@ -39,6 +39,23 @@ sudo tail -f /var/log/syslog
 ```
 <br>
 
+*Check for Shutdown Logsg* 
+```
+sudo journalctl -b -1 -e
+```
+<br>
+
+*Specific Shutdown and Reboot Events* 
+```
+sudo journalctl --unit=systemd-shutdown
+```
+<br>
+
+*Viewing Specific Time Range:*
+```
+sudo journalctl --since "2024-06-17 10:00:00" --until "2024-06-17 10:30:00"
+```
+
 *List and install available GUI (Graphical User Interface)*
 ```
 tasksel
