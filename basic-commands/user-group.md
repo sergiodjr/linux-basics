@@ -75,6 +75,12 @@ usermod -a -G <GROUPNAME> <USERNAME>
 ```
 <br>
 
+*Remove user from group*
+```
+sudo deluser <USERNAME> <GROUPNAME>
+```
+<br>
+
 *Show groups members*
 ```
 members <GROUPNAME>
