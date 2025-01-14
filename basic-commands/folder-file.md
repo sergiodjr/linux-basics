@@ -55,3 +55,28 @@ chown -R username:groupname directoryname
 chmod -R 755 /path/to/folder
 ```
 <br>
+
+|<< PERMISSION >>|
+|-------------|
+<br>
+
+**r:** Read permission.<br>
+**w:** Write permission.<br>
+**x:** Execute permission.<br>
+<br>
+
+**The permissions are displayed for three different categories:**<br>
+User (u): The owner of the file.<br>
+Group (g): The group to which the file belongs.<br>
+Others (o): Everyone else.<br>
+<br>
+
+```
+-rwxr-xr-x 1 user user 1234 Jul 21 12:34 script.sh
+```
+<br>
+
+**In the example above, ```-rwxr-xr-x``` means:**<br>
+The owner (user) can read, write, and execute (```rwx```).<br>
+The group can read and execute (```r-x```).<br>
+Others can read and execute (```r-x```).<br>
