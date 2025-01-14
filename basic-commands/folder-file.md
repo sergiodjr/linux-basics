@@ -116,7 +116,7 @@ pv source_file > destination_file
 ```
 <br>
 
-*For copying directories, you can combine tar with pv:*
+*For copying directories, you can combine ```tar``` with ```pv```:*
 ```
 tar -cf - source_directory | pv | tar -xf - -C destination_directory
 ```
