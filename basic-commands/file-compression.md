@@ -5,7 +5,16 @@ A ```tar.gz``` file is a common archive format used in Unix and Unix-like system
 **Gzip (GNU zip):** This is a compression utility that compresses the files to reduce their size. The extension for Gzip compressed files is ```.gz```.
 
 When you combine these two formats, you get a ```tar.gz``` file, which is a compressed archive. The ```.tar.gz``` extension indicates that the file is a tarball that has been compressed with Gzip.
-
-To create a ```tar.gz``` file, you can use the tar command with the ```-czf``` options.
 <br>
-```tar -czf archive.tar.gz directory/```
+
+To create a ```tar.gz``` file, you can use the tar command with the ```-czf``` options.<br>
+This command compresses the ```directory/``` into a ```tar.gz``` archive named ```archive.tar.gz```.
+```
+tar -czf archive.tar.gz directory/
+```
+<br>
+
+To extract a ```tar.gz``` file, you use the tar command with the ```-xzf``` options:
+```
+tar -xzf archive.tar.gz
+```
