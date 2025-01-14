@@ -80,3 +80,44 @@ Others (o): Everyone else.<br>
 The owner (user) can read, write, and execute (```rwx```).<br>
 The group can read and execute (```r-x```).<br>
 Others can read and execute (```r-x```).<br>
+<br>
+
+|<< MOVING AND COPYING FILES >>|
+|-------------|
+<br>
+
+*To move a directory from one location to another, use the mv command.*
+```
+mv /path/to/source_directory /path/to/destination_directory
+```
+<br>
+
+*To copy a directory (and its contents), use the cp command with the -r (recursive) option.*
+```
+cp -r /path/to/source_directory /path/to/destination_directory
+```
+<br>
+
+*Preserve file attributes: Use -a (archive) with cp to preserve permissions, timestamps, and symbolic links*
+```
+cp -ar /path/to/source_directory /path/to/destination_directory
+```
+<br>
+
+*To monitor the copying progress use ```pv``` to monitor the progress of data through a pipe.*<br>
+```
+sudo apt-get install pv
+```
+<br>
+
+*To copy a file and show progress, you can use:*
+```
+pv source_file > destination_file
+```
+<br>
+
+*For copying directories, you can combine tar with pv:*
+```
+tar -cf - source_directory | pv | tar -xf - -C destination_directory
+```
+<br>
