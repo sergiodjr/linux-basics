@@ -56,7 +56,7 @@ chmod -R 755 /path/to/folder
 ```
 <br>
 
-*Make the Script Executable*
+*Make a script executable*
 ```
 chmod +x SCRIPT.sh
 ```
