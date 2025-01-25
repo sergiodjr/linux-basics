@@ -19,3 +19,15 @@ What are we plannnig to achieve?
 
 check out a fewstraight flraward guide about docker and linux that I keep in my repository.
 Hadly for Linux beginners.
+
+
+Ah, Linux... I know, this little penguin looks adorable, but don’t be fooled—it can drive anyone insane. Trust me, I’ve been in your shoes, I know the struggle.
+
+Here you’ll find the most useful commands, covering mostly basic to intermediate tasks on Linux. Think of it as a compact, handy library of essential Linux commands for your daily survival.
+
+Before you dive into the tips: Make sure your repository is up to date by running sudo apt update (or whatever fits your distro). Starting with an outdated repo is just asking for trouble, and this little penguin is tricky enough as it is.
+
+Spoiler alert: this guy drives me nuts too. But don’t let that cute face fool you—he’s got a mischievous streak!
+
+Good luck, and may the terminal always work in your favor! 🐧✨
+
