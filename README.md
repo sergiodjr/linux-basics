@@ -31,3 +31,4 @@ Spoiler alert: this guy drives me nuts too. But don’t let that cute face fool 
 
 Good luck, and may the terminal always work in your favor! 🐧✨
 
+YOu will find some basics to intermiadiare commands that might come handy on your daily task
