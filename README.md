@@ -9,7 +9,7 @@ In my Git, you will find the most useful commands that cover mostly basic to int
 A compact and handy library of regular Linux commands for daily use, organized into categories for easy identification based on your needs.
 
 All you need is a device running a Linux distro.<br>
-For beginners, I would recommend Ubuntu or [Debian](https://www.debian.org/distrib/), two of the most well-known Linux distributions<br> 
+For beginners, I would recommend [Ubuntu](https://ubuntu.com/download/desktop) or [Debian](https://www.debian.org/distrib/), two of the most well-known Linux distributions<br> 
 that are widely used in IT infrastructure.
 
 For practicing and studying, I strongly recommend installing Linux on a Virtual Machine or, even better, in a Linux Container.
