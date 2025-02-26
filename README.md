@@ -1,7 +1,7 @@
 
 ![linux21](https://github.com/user-attachments/assets/c95f5291-819b-4183-ae6e-155f340efcc5)
 
-# linux-basics
+# Linux Basic Library
 Basic guides, and essentials services for home labs
 
 
