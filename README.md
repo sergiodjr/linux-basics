@@ -12,6 +12,6 @@ All you need is a device running a Linux distro.<br>
 For beginners, I would recommend Ubuntu or Debian, two of the most well-known Linux distributions<br> 
 that are widely used in IT infrastructure.
 
-For practicing and studying, I strongly recommend installing Linux on a Virtual Machine or, even better, in a Linux Container.<br>
+For practicing and studying, I strongly recommend installing Linux on a Virtual Machine or, even better, in a Linux Container.
 If you don't know how to set up a virtual environment, check out the Proxmox folder,<br> 
 I have written a guide on how to easily set up Proxmox and get ready to dive into Linux.
