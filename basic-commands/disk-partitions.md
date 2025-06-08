@@ -50,6 +50,12 @@ sudo umount -f /dev/YouPickTheDrive
 ```
 <br>
 
+*If umount force fails. This forcefully kills all processes using the mount point:*
+```
+sudo fuser -km <MOUNT POINT>
+```
+<br>
+
 *Mount exFat partition:*
 ```
 sudo mount -t exfat /dev/sda2 /you/pick/thefolder
