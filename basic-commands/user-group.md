@@ -2,92 +2,92 @@
 |-------------|
 <br>
 
-*Login with root*
+*Login with root:*
 ```
 su
 ```
 <br>
 
-*Add the User*
+*Add the User:*
 ```
 sudo adduser <USERNAME>
 ```
 <br>
 
-*Verify the User*
+*Verify the User:*
 ```
 getent passwd <USERNAME>
 ```
 <br>
 
-*Change user password*
+*Change user password:*
 ```
 sudo passwd <USERNAME>
 ```
 <br>
 
-*Delete a user*
+*Delete a user:*
 ```
 userdel -r <USERNAME>
 ```
 <br>
 
-*To view a list of all groups a user belongs t*
+*To view a list of all groups a user belongs to:*
 ```
 groups <USERNAME>
 ```
 <br>
 
-*Show user account ID*
+*Show user account ID:*
 ```
 id -u
 cat /etc/passwd
 ```
 <br>
 
-*To find the PGID (Primary Group ID)*
+*To find the PGID (Primary Group ID):*
 ```
 id -g <USERNAME>
 ```
 <br>
 
-*List all users that have password set*
+*List all users that have password set:*
 ```
 getent passwd | awk -F: '$3 >= 1000 && $3 < 65534 {print $1}'
 ```
 <br>
 
-*List all groups*
+*List all groups:*
 ```
 cat /etc/group
 ```
 <br>
 
-*Delete a group*
+*Delete a group:*
 ```
 sudo groupdel <GROUPNAME>
 ```
 <br>
 
-*Add a user to a group*
+*Add a user to a group:*
 ```
 usermod -a -G <GROUPNAME> <USERNAME>
 ```
 <br>
 
-*Remove user from group*
+*Remove user from group:*
 ```
 sudo deluser <USERNAME> <GROUPNAME>
 ```
 <br>
 
-*Show groups members*
+*Show groups members:*
 ```
 members <GROUPNAME>
 ```
 <br>
 
-*Query information about a specific group*
+*Query information about a specific group:*
 ```
 getent group <GROUPNAME>
 ```
