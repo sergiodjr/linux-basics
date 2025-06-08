@@ -116,9 +116,21 @@ sudo apt-get install pv
 ```
 <br>
 
-*To copy a file and show progress, you can use:*
+*To copy a file and show progress. (need to install pv):*
 ```
 pv source_file > destination_file
+```
+<br>
+
+*To copy the entire directory and its files. Option1:*
+```
+tar -cf - -C <SOURCE> | pv | tar -xf - -C <DESTINATION>
+```
+<br>
+
+*To copy the entire directory and its files. (need to install resync). Option2:*
+```
+rsync -a --info=progress2 <SOURCE> <DESTINATION>
 ```
 <br>
 
