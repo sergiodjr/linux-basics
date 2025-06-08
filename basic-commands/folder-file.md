@@ -2,61 +2,61 @@
 |-------------|
 <br>
 
-*Create a folder*
+*Create a folder:*
 ```
 mkdir foldername
 ```
 <br>
 
-*You can create sub-directories of a director*
+*You can create sub-directories of a directory:*
 ```
 mkdir -p foldername/subdirectory
 ```
 <br>
 
-*Remove a directory and its contents*
+*Remove a directory and its contents:*
 ```
 rm -r foldername
 ```
 <br>
 
-*Remove a directory prompting for confirmation*
+*Remove a directory prompting for confirmation:*
 ```
 rm -ri foldername
 ```
 <br>
 
-*Force removal without confirmation*
+*Force removal without confirmation:*
 ```
 rm -rf foldername
 ```
 <br>
 
-*Change both the owner and group of a folder or file*
+*Change both the owner and group of a folder or file:*
 ```
 sudo chown owner:groupname /path/to/folder
 ```
 <br>
 
-*Change the owner of a file to a specific user*
+*Change the owner of a file to a specific user:*
 ```
 chown <USERNAME> <FILENAME>
 ```
 <br>
 
-*Recursively change ownership for all files and directories within a directory*
+*Recursively change ownership for all files and directories within a directory:*
 ```
 chown -R username:groupname directoryname
 ```
 <br>
 
-*Change folder permission*
+*Change folder permission:*
 ```
 chmod -R 755 /path/to/folder
 ```
 <br>
 
-*Make a script executable*
+*Make a script executable:*
 ```
 chmod +x SCRIPT.sh
 ```
@@ -92,25 +92,25 @@ Others can read and execute (```r-x```).<br>
 |-------------|
 <br>
 
-*To move a directory from one location to another, use the mv command.*
+*To move a directory from one location to another, use the mv command:*
 ```
 mv /path/to/source_directory /path/to/destination_directory
 ```
 <br>
 
-*To copy a directory (and its contents), use the cp command with the -r (recursive) option.*
+*To copy a directory (and its contents), use the cp command with the -r (recursive) option:*
 ```
 cp -r /path/to/source_directory /path/to/destination_directory
 ```
 <br>
 
-*Preserve file attributes: Use -a (archive) with cp to preserve permissions, timestamps, and symbolic links*
+*Preserve file attributes: Use -a (archive) with cp to preserve permissions, timestamps, and symbolic links:*
 ```
 cp -ar /path/to/source_directory /path/to/destination_directory
 ```
 <br>
 
-*To monitor the copying progress use ```pv``` to monitor the progress of data through a pipe.*<br>
+*To monitor the copying progress use ```pv``` to monitor the progress of data through a pipe:*
 ```
 sudo apt-get install pv
 ```
