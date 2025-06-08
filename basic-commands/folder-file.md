@@ -50,7 +50,7 @@ chown -R username:groupname directoryname
 ```
 <br>
 
-*Change folder permission:*
+*Change folder and its entire content permission:*
 ```
 chmod -R 755 /path/to/folder
 ```
