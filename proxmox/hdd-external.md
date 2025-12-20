@@ -26,3 +26,4 @@ mp0: /shared/hdd1,mp=/mnt/hdd1
 mp1: /shared/hdd2,mp=/mnt/hdd2
 ```
 
+Proxmox storage configuration ```/etc/pve/storage.cfg```
