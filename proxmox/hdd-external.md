@@ -22,3 +22,5 @@ Add lines to bind the directories into the container:
 mp0: /shared/hdd1,mp=/mnt/hdd1
 mp1: /shared/hdd2,mp=/mnt/hdd2
 ```
+Don't forget to give proper permissions "chmod 777" on PROMOX root
+where the external disks are plugged in.
