@@ -1,6 +1,9 @@
 Mount the HDDs on the Proxmox Host
 Identify the devices using ```lsblk``` to confirm their device names ```/dev/sdb1, /dev/sdc1```
 
+Don't forget to give proper permissions "chmod 777" on Proxmox host console
+where the external disks are plugged in.
+
 Create mount points on the Proxmox host, such as
 ```
 mkdir -p /mnt/hdd1
@@ -22,5 +25,4 @@ Add lines to bind the directories into the container:
 mp0: /shared/hdd1,mp=/mnt/hdd1
 mp1: /shared/hdd2,mp=/mnt/hdd2
 ```
-Don't forget to give proper permissions "chmod 777" on PROMOX root
-where the external disks are plugged in.
+
