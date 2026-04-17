@@ -2,7 +2,7 @@
 |-------------|
 <br>
 
-*list block devices: disks, partitions, LVM, mounts*
+*List block devices: disks, partitions, LVM, mounts*
 ```
 lsblk
 ```
