@@ -2,9 +2,15 @@
 |-------------|
 <br>
 
-*List available disk/partitions showing its name, size and mount point:*
+*list block devices: disks, partitions, LVM, mounts*
 ```
 lsblk
+```
+<br>
+
+*Block device attributes: UUID, LABEL, TYPE*
+```
+lskid
 ```
 <br>
 
