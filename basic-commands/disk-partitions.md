@@ -4,7 +4,7 @@
 
 *List block devices: disks, partitions, LVM, mounts*
 ```
-lsblk
+lsblk -f
 ```
 <br>
 
