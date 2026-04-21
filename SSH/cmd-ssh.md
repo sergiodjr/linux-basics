@@ -4,9 +4,28 @@
 
 #SSH - https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
 
+*Install SSH Server*
+```
+apt update
+apt install openssh-server -y
+```
+<br>
+
 *Show SSH service status*
 ```
 sudo systemctl status ssh
+```
+<br>
+
+*Enable SSH service*
+```
+systemctl enable --now ssh
+```
+<br>
+
+*SSH Config file*
+```
+nano /etc/ssh/sshd_config
 ```
 <br>
 
