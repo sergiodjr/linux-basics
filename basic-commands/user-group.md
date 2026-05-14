@@ -73,6 +73,9 @@ sudo groupdel <GROUPNAME>
 ```
 usermod -a -G <GROUPNAME> <USERNAME>
 ```
+```
+sudo /usr/sbin/usermod -aG <GROUPNAME> <USERNAME>
+```
 <br>
 
 *Remove user from group:*
